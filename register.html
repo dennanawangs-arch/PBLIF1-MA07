@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi - Kas Kelas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 13px solid #3169df;
+            padding: 30px 0;
+        }
+
+        .register-container {
+            width: 660px;
+            min-height: 766px;
+            background-color: white;
+            border: 1px solid #c5d2e2;
+            border-radius: 18px;
+            padding: 32px 109px;
+            text-align: center;
+        }
+
+        .register-container h1 {
+            color: #19334e;
+            font-size: 32px;
+            margin-bottom: 14px;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 21px;
+            margin-bottom: 46px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 52px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #64748b;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            height: 48px;
+            padding: 12px 14px;
+            border: 1px solid #c5d2e2;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .form-group input:focus {
+            border-color: #3169df;
+        }
+
+        .form-group input::placeholder {
+            color: #9aa9bc;
+        }
+
+        .btn-register {
+            width: 100%;
+            height: 46px;
+            background-color: #3169df;
+            color: white;
+            border: none;
+            border-radius: 9px;
+            font-size: 15px;
+            text-align: center;
+            padding-left: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-register:hover {
+            background-color: #2457c5;
+        }
+
+        @media (max-width: 700px) {
+            .register-container {
+                width: 90%;
+                min-height: auto;
+                padding: 35px 25px;
+            }
+
+            .register-container h1 {
+                font-size: 27px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .form-group {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <h1>REGISTRASI</h1>
+
+        <p class="subtitle">Buat akun anggota kelas</p>
+
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label for="nim">NIM</label>
+                <input
+                    type="text"
+                    id="nim"
+                    name="nim"
+                    placeholder="Masukkan NIM"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Buat password"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="konfirmasi">Konfirmasi Password</label>
+                <input
+                    type="password"
+                    id="konfirmasi"
+                    name="konfirmasi"
+                    placeholder="Ulangi password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="btn-register" >
+                DAFTAR
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

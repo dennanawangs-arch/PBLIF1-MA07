@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Jenis Iuran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>KAS KELAS</h1>
+    <div class="navbar-right">
+        BENDAHARA | <a href="#">Profil</a> | <a href="login.html">Keluar</a>
+    </div>
+</header>
+
+<aside class="sidebar">
+    <a href="dashboard_bendahara.html">Dashboard</a>
+    <a href="data_anggota.html">Data Anggota</a>
+    <a href="jenis_iuran.html" class="active">Jenis Iuran</a>
+    <a href="pemasukan.html">Pemasukan</a>
+    <a href="#">Pengeluaran</a>
+    <a href="#">Cari Transaksi</a>
+    <a href="#">Laporan</a>
+</aside>
+
+<main class="main-content">
+
+    <h2>Kelola Jenis Iuran</h2>
+
+    <p class="subtitle">
+        Atur jenis tagihan yang akan dibayarkan anggota
+    </p>
+
+    <form class="iuran-form">
+
+        <div class="form-group">
+            <label>Nama Jenis Iuran</label>
+            <input type="text" placeholder="Contoh: Iuran Bulanan">
+        </div>
+
+        <div class="form-group">
+            <label>Nominal (Rp)</label>
+            <input type="number" placeholder="Contoh: 50000">
+        </div>
+
+        <div class="form-group">
+            <label>Keterangan</label>
+            <input type="text" placeholder="Contoh: Dibayar setiap bulan">
+        </div>
+
+        <button type="button">SIMPAN</button>
+
+    </form>
+
+    <h3>Daftar Jenis Iuran</h3>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Kode</th>
+                    <th>Nama Iuran</th>
+                    <th>Nominal</th>
+                    <th>Keterangan</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>JI-001</td>
+                    <td>Iuran Bulanan</td>
+                    <td>Rp 50.000</td>
+                    <td>Pembayaran rutin</td>
+                    <td>Edit | Hapus</td>
+                </tr>
+
+                <tr>
+                    <td>JI-002</td>
+                    <td>Iuran Kegiatan</td>
+                    <td>Rp 25.000</td>
+                    <td>Kegiatan kelas</td>
+                    <td>Edit | Hapus</td>
+                </tr>
+
+                <tr>
+                    <td>JI-003</td>
+                    <td>Iuran Kebersihan</td>
+                    <td>Rp 10.000</td>
+                    <td>Kebutuhan kebersihan</td>
+                    <td>Edit | Hapus</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+</body>
+</html>

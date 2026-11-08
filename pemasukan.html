@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencatatan Pemasukan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>KAS KELAS</h1>
+    <div class="navbar-right">
+        BENDAHARA | <a href="#">Profil</a> | <a href="login.html">Keluar</a>
+    </div>
+</header>
+
+<aside class="sidebar">
+    <a href="dashboard_bendahara.html">Dashboard</a>
+    <a href="data_anggota.html">Data Anggota</a>
+    <a href="jenis_iuran.html">Jenis Iuran</a>
+    <a href="pemasukan.html" class="active">Pemasukan</a>
+    <a href="#">Pengeluaran</a>
+    <a href="#">Cari Transaksi</a>
+    <a href="#">Laporan</a>
+</aside>
+
+<main class="main-content">
+
+    <h2>Pencatatan Pemasukan</h2>
+
+    <form class="pemasukan-form">
+
+        <div class="form-group">
+            <label>Tanggal</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>Nama Anggota</label>
+            <select>
+                <option value="">Pilih anggota</option>
+                <option>Andi Pratama</option>
+                <option>Bunga Lestari</option>
+                <option>Citra Ayu</option>
+                <option>Dimas Putra</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Jenis Iuran</label>
+            <select>
+                <option value="">Pilih jenis iuran</option>
+                <option>Iuran Bulanan</option>
+                <option>Iuran Kegiatan</option>
+                <option>Iuran Kebersihan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Nominal (Rp)</label>
+            <input type="number" placeholder="Terisi otomatis / masukkan nominal">
+        </div>
+
+        <div class="form-group keterangan">
+            <label>Keterangan</label>
+            <input type="text" placeholder="Tambahkan keterangan (opsional)">
+        </div>
+
+        <div>
+            <button type="button">SIMPAN</button>
+        </div>
+
+    </form>
+
+    <h3>Riwayat Pemasukan</h3>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Anggota</th>
+                    <th>Jenis Iuran</th>
+                    <th>Nominal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>10/10/2026</td>
+                    <td>Andi Pratama</td>
+                    <td>Bulanan</td>
+                    <td>Rp 50.000</td>
+                    <td>Edit | Hapus</td>
+                </tr>
+
+                <tr>
+                    <td>10/10/2026</td>
+                    <td>Bunga Lestari</td>
+                    <td>Bulanan</td>
+                    <td>Rp 50.000</td>
+                    <td>Edit | Hapus</td>
+                </tr>
+
+                <tr>
+                    <td>08/10/2026</td>
+                    <td>Citra Ayu</td>
+                    <td>Kegiatan</td>
+                    <td>Rp 25.000</td>
+                    <td>Edit | Hapus</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+</body>
+</html>

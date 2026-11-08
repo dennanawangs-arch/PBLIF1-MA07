@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1>KAS KELAS</h1>
+
+    <div class="navbar-right">
+        BENDAHARA |
+        <a href="#">Profil</a> |
+        <a href="login.html">Keluar</a>
+    </div>
+</header>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <a href="dashboard_bendahara.html">Dashboard</a>
+    <a href="data_anggota.html">Data Anggota</a>
+    <a href="jenis_iuran.html">Jenis Iuran</a>
+    <a href="pemasukan.html">Pemasukan</a>
+    <a href="pengeluaran.html">Pengeluaran</a>
+    <a href="cari_transaksi.html" class="active">Cari Transaksi</a>
+    <a href="#">Laporan</a>
+</aside>
+
+<!-- KONTEN UTAMA -->
+<main class="main-content">
+
+    <h2>Cari Transaksi</h2>
+
+    <!-- FORM PENCARIAN -->
+    <form class="pencarian-form">
+
+        <div class="form-group">
+            <label>Kata kunci</label>
+            <input type="text"
+                   name="keyword"
+                   placeholder="Nama anggota atau keterangan">
+        </div>
+
+        <div class="form-group">
+            <label>Dari tanggal</label>
+            <input type="date" name="tanggal_awal">
+        </div>
+
+        <div class="form-group">
+            <label>Sampai tanggal</label>
+            <input type="date" name="tanggal_akhir">
+        </div>
+
+    </form>
+
+    <!-- TOMBOL -->
+    <div class="pencarian-button">
+        <button type="button">CARI</button>
+        <button type="reset"
+                form="form-reset"
+                class="btn-reset"
+                onclick="location.reload()">
+            RESET
+        </button>
+    </div>
+
+    <!-- HASIL PENCARIAN -->
+    <h3>Hasil Pencarian</h3>
+
+    <div class="table-container">
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Nama / Keterangan</th>
+                    <th>Jenis Transaksi</th>
+                    <th>Nominal</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>10/10/2026</td>
+                    <td>Andi - Iuran Bulanan</td>
+                    <td>Pemasukan</td>
+                    <td>Rp 50.000</td>
+                </tr>
+
+                <tr>
+                    <td>09/10/2026</td>
+                    <td>Pembelian alat tulis</td>
+                    <td>Pengeluaran</td>
+                    <td>Rp 100.000</td>
+                </tr>
+
+                <tr>
+                    <td>08/10/2026</td>
+                    <td>Citra - Iuran Kegiatan</td>
+                    <td>Pemasukan</td>
+                    <td>Rp 25.000</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</main>
+
+</body>
+</html>
